@@ -1,0 +1,67 @@
+/* Register Page */
+
+.title__form {
+	margin-bottom: 20px;
+	text-align: center;
+	color: #333;
+}
+
+.register__form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.register__form input[type="text"],
+.register__form input[type="email"],
+.register__form input[type="password"],
+.register__form input[type="checkbox"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 2px solid #ccc;
+	box-sizing: border-box;
+  transition: border-color 0.15s ease;
+}
+
+.register__form input[type="text"]:focus,
+.register__form input[type="email"]:focus,
+.register__form input[type="password"]:focus,
+.register__form input[type="checkbox"]:focus {
+	border-color: #555;
+	outline: none;
+}
+
+.btn-register {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: #333;
+	color: white;
+	cursor: pointer;
+}
+
+.btn-register:hover {
+	background-color: #555;
+}
+
+.checkbox-label {
+	margin-left: 10px;
+}
+
+.checkbox-container {
+	display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+	width: 15px;
+}
+
+.error__input {
+  border: 2px solid #FF0000 !important;
+}
+
+.none {
+  display: none;
+}

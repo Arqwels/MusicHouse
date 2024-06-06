@@ -1,0 +1,43 @@
+/* Login Page */
+
+.title__form {
+	margin-bottom: 40px;
+	text-align: center;
+	color: #333;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+	width: 100%;
+	padding: 10px;
+	margin-top: 12px;
+	margin-bottom: 30px;
+	border: 2px solid #ccc;
+	box-sizing: border-box;
+	transition: border-color 0.15s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+	border-color: #555;
+	outline: none;
+}
+
+.btn-login {
+	width: 100%;
+	padding: 16px;
+	border: none;
+	margin-top: 20px;
+	border-radius: 4px;
+	background-color: #555;
+	color: white;
+	cursor: pointer;
+}
+
+.error__input {
+  border: 2px solid #FF0000 !important;
+}
+
+.none {
+  display: none;
+}
