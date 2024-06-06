@@ -12,8 +12,21 @@ $password = $_POST['password'];
 $password_repeat = $_POST['password_repeat'];
 $rules = filter_var($_POST['rules'], FILTER_VALIDATE_BOOLEAN);
 
-// Валидация
+$check_login = mysqli_query($connect, "SELECT * FROM `users` WHERE `login` = '$login'");
 
+if (mysqli_num_rows($check_login) > 0) {
+  $response = [
+    "status" => false,
+    "type" => "candidateExists",
+    "message" => "Данный логин уже занят!",
+  ];
+
+  echo  json_encode($response);
+
+  die();
+}
+
+// Валидация
 $error_fields = [];
 $fields = [
   'name' => $name,

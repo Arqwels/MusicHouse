@@ -107,6 +107,9 @@ if (isset($_SESSION['user'])) {
                 $(`input[name="${field}"]`).addClass('error__input');
               })
             }
+            if (data.type === "candidateExists") {
+              $('input[name="login"]').addClass('error__input');
+            }
             if (data.type === "noAgree") {
               $('.checkbox-container').css('color', '#ff1f1f');
             }
