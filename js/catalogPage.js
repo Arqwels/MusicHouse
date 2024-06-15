@@ -1,14 +1,16 @@
 $(document).ready(function () {
-  // Загрузка данных из JSON файла
-  $.getJSON("./productMOCK.json", function (data) {
+  // Загрузка данных из PHP-скрипта
+  $.getJSON("./vendor/getProducts.php", function (data) {
     const items = data.map(item => ({
       id: item.id,
       name: item.name,
-      year: item.productionYear,
+      year: item.year,
       price: item.price,
-      imageSrc: item.urlImg,
+      imageSrc: item.imageSrc,
       category: item.category
     }));
+
+    console.log(items);
 
     const itemList = $('#itemList');
     renderItems(items);
@@ -29,7 +31,7 @@ $(document).ready(function () {
                     <div class="card__top">
                         <p class="card__top-price"><span>${slideData.price}</span> ₽</p>
                         <h3 class="card__top-name">${slideData.name}</h3>
-                        <img class="card__top-img" src="${slideData.imageSrc}" alt="${slideData.alt}"/>
+                        <img class="card__top-img" src="./assets/images/${slideData.imageSrc}" alt="${slideData.imageSrc}"/>
                     </div>
                     <div class="card__btn">
                         <a href="productPage.php?id=${slideData.id}">Купить</a>

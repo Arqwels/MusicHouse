@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
     loop: true,
     loopedSlides: 3,
     autoplay: {
-      delay: 1000,
+      delay: 2000,
       stopOnLastSlide: false,
       disableOnInteraction: true
     },

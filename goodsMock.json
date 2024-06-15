@@ -1,0 +1,66 @@
+{
+  "11": {
+    "name": "Гитара №1",
+    "productionYear": 2007,
+    "price": 8999,
+    "category": [
+      "струнные"
+    ],
+    "img": "novelty_1.png",
+    "inStock": true,
+    "productCount": 12,
+    "createData": 13022024
+  },
+
+  "12": {
+    "name": "Гитара №2",
+    "productionYear": 2002,
+    "price": 12999,
+    "category": [
+      "клавишные-смычковые"
+    ],
+    "img": "novelty_2.png",
+    "inStock": true,
+    "productCount": 2,
+    "createData": 13022024
+  },
+
+  "13": {
+    "name": "Гитара №3",
+    "productionYear": 2022,
+    "price": 32499,
+    "category": [
+      "cтальные струны"
+    ],
+    "img": "novelty_3.png",
+    "inStock": true,
+    "productCount": 6,
+    "createData": 13022024
+  },
+
+  "14": {
+    "name": "Гитара №4",
+    "productionYear": 2017,
+    "price": 27299,
+    "category": [
+      "4-стунные"
+    ],
+    "img": "novelty_4.png",
+    "inStock": true,
+    "productCount": 4,
+    "createData": 13022024
+  },
+
+  "15": {
+    "name": "Гитара №5",
+    "productionYear": 2007,
+    "price": 9199,
+    "category": [
+      "клавишные-смычковые"
+    ],
+    "img": "novelty_5.png",
+    "inStock": true,
+    "productCount": 7,
+    "createData": 13022024
+  }
+}

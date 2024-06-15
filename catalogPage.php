@@ -1,5 +1,16 @@
 <?php
 session_start();
+
+// include "./vendor/connect.php";
+
+// $result = mysqli_query($connect, "SELECT * FROM `products`");
+
+// while ($food = mysqli_fetch_assoc($result)) {
+//   print_r($food);
+//   echo "<br>";
+// };
+
+
 ?>
 
 <!doctype html>
@@ -50,7 +61,7 @@ session_start();
   </section>
 
   <script src="./assets/libs/jquery-3.6.0.min.js"></script>
-  <script src="./sort.js"></script>
+  <script src="./js/catalogPage.js"></script>
 </body>
 
 </html>

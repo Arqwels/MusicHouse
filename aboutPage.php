@@ -40,7 +40,12 @@ session_start();
     </div>
   </section>
 
+  <div class="mini-card"></div>
+  <section class="goods-out"></section>
+
   <script src="./assets/libs/swiper-bundle.min.js"></script>
+  <script src="./assets/libs/jquery-3.6.0.min.js"></script>
+  <script src="./js/sliderAbout.js"></script>
   <script src="./script.js"></script>
 
 </body>

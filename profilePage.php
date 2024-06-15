@@ -17,12 +17,20 @@ if (!$_SESSION['user']) {
 <body>
 
   <?php include './components/navbar.php'; ?>
+  <main class="wrapper">
+    <div class="profile-container">
+      <h1>Профиль пользователя: <?= $_SESSION["user"]["surname"] ?> <?= $_SESSION["user"]["name"] ?> <?= $_SESSION["user"]["patronymic"] ?></h1>
+      
 
-  <h1>ты лошок</h1>
-  <h2><?= $_SESSION["user"]["name"] ?></h2>
+      <p class="title__order">История заказов</p>
 
+      <div class="history__order"></div>
+    </div>
+  </main>
+  
 
-
+  <script src="./assets/libs/jquery-3.6.0.min.js"></script>
+  <script src="./js/getHistoryOrder.js"></script>
 </body>
 
 </html>
