@@ -5,12 +5,12 @@ require_once 'connect.php';
 $response = [];
 
 if (!isset($_SESSION['user'])) {
-    $response = [
-        "status" => false,
-        "message" => "Пользователь не авторизован"
-    ];
-    echo json_encode($response);
-    exit();
+  $response = [
+    "status" => false,
+    "message" => "Пользователь не авторизован"
+  ];
+  echo json_encode($response);
+  exit();
 }
 
 $userId = $_SESSION['user']['id'];
@@ -29,24 +29,24 @@ $result = $stmt->get_result();
 $orders = [];
 
 while ($row = $result->fetch_assoc()) {
-    $orderId = $row['id'];
-    if (!isset($orders[$orderId])) {
-        $orders[$orderId] = [
-            "id" => $orderId,
-            "status" => $row['status'],
-            "date" => $row['date'],
-            "products" => []
-        ];
-    }
-    $orders[$orderId]['products'][] = [
-        "name" => $row['product_name'],
-        "count" => $row['product_count']
+  $orderId = $row['id'];
+  if (!isset($orders[$orderId])) {
+    $orders[$orderId] = [
+      "id" => $orderId,
+      "status" => $row['status'],
+      "date" => $row['date'],
+      "products" => []
     ];
+  }
+  $orders[$orderId]['products'][] = [
+    "name" => $row['product_name'],
+    "count" => $row['product_count']
+  ];
 }
 
 $response = [
-    "status" => true,
-    "orders" => array_values($orders)
+  "status" => true,
+  "orders" => array_values($orders)
 ];
 
 header('Content-Type: application/json');

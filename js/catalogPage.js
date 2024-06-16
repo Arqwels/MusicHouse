@@ -27,17 +27,17 @@ $(document).ready(function () {
 
     function createSlideCard(slideData) {
       return `
-                <div class="card">
-                    <div class="card__top">
-                        <p class="card__top-price"><span>${slideData.price}</span> ₽</p>
-                        <h3 class="card__top-name">${slideData.name}</h3>
-                        <img class="card__top-img" src="./assets/images/${slideData.imageSrc}" alt="${slideData.imageSrc}"/>
-                    </div>
-                    <div class="card__btn">
-                        <a href="productPage.php?id=${slideData.id}">Купить</a>
-                    </div>
-                </div>
-            `;
+        <div class="card">
+          <div class="card__top">
+            <p class="card__top-price"><span>${slideData.price}</span> ₽</p>
+            <h3 class="card__top-name">${slideData.name}</h3>
+            <img class="card__top-img" src="./assets/images/${slideData.imageSrc}" alt="${slideData.imageSrc}"/>
+          </div>
+          <div class="card__btn">
+            <a href="productPage.php?id=${slideData.id}">Купить</a>
+          </div>
+        </div>
+      `;
     }
 
     function renderItems(items) {

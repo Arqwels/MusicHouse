@@ -20,14 +20,12 @@ if (!$_SESSION['user']) {
   <main class="wrapper">
     <div class="profile-container">
       <h1>Профиль пользователя: <?= $_SESSION["user"]["surname"] ?> <?= $_SESSION["user"]["name"] ?> <?= $_SESSION["user"]["patronymic"] ?></h1>
-      
 
       <p class="title__order">История заказов</p>
 
       <div class="history__order"></div>
     </div>
   </main>
-  
 
   <script src="./assets/libs/jquery-3.6.0.min.js"></script>
   <script src="./js/getHistoryOrder.js"></script>

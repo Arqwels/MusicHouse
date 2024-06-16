@@ -17,7 +17,7 @@ include './assets/constants.php';
 		<ul class="nav-links">
 			<li><a class="links-navbar" href="<?php echo ABOUT_PAGE; ?>">О нас</a></li>
 			<li><a class="links-navbar" href="<?php echo CATALOG_PAGE; ?>">Каталог</a></li>
-			<li><a class="links-navbar" href="#">Где нас найти?</a></li>
+			<li><a class="links-navbar" href="<?php echo FINDUS_PAGE; ?>">Где нас найти?</a></li>
 			<?php
 			if (isset($_SESSION['user'])) {
 				echo '<li><a class="links-navbar" href="' . BASKET_PAGE . '" class="">Корзина</a></li>';
